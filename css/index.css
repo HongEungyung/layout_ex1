@@ -1,0 +1,129 @@
+@charset "uft-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* 전체 레이아웃 */
+.container {
+  width: 1200px;
+  height: 1000px;
+  background-color: antiquewhite;
+  margin: auto;
+}
+/* 상단 */
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #004455;
+}
+/* 로고 */
+.logo {
+  width: 300px;
+  background-color: aqua;
+  float: left;
+}
+.logo h1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  /* ↓배경사이즈랑 같게 하면 배경사이즈=글자사이즈 라서 글자가 중앙에 옴 */
+  line-height: 100px;
+  text-align: center;
+}
+/* 메뉴 */
+nav {
+  position: relative;
+  width: 900px;
+  background-color: blue;
+  float: right;
+  height: 100%;
+}
+#topMenu {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: calc(100% - 100px);
+  height: 60px;
+  margin-top: 40px;
+  background-color: violet;
+}
+#topMenu li {
+  width: calc(100% / 4);
+  /* float: left 주는 순간 디스플레이는 inline-block 성질이 됨 */
+  float: left;
+  line-height: 60px;
+  /* line-height 주면 height 따로 안 줘도 됨 */
+  /* height: 60px; */
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: aquamarine;
+}
+#topMenu li:hover {
+  background-color: rgb(98, 197, 164);
+}
+#topMenu li:hover a {
+  color: #fff;
+}
+/* ↓링크 a:hover 로 바로 줘도 됨*/
+/* #topMenu li a:hover{
+    background-color: rgb(98, 197, 164);
+    color: #fff;
+} */
+/* 메인 */
+.contents {
+  width: 100%;
+  height: 800px;
+  background-color: rgb(167, 227, 255);
+}
+/* 힐링 */
+.main-top {
+  width: 100%;
+  height: calc(100% / 2);
+  background-color: rgb(252, 44, 252);
+}
+/* title */
+.main-top h2 {
+  background-color: rgb(255, 141, 169);
+}
+/* 설명 */
+.description {
+  width: 100%;
+  height: 300px;
+  background-color: blueviolet;
+}
+.desc-img {
+  float: left;
+  width: 450px;
+  height: 100%;
+  background-color: brown;
+}
+.desc-detail {
+  float: left;
+  width: calc(100% - 450px);
+  height: 100%;
+  background-color: cadetblue;
+}
+.detail-top{
+    height: calc(100% / 2);
+    background-color: chartreuse;
+}
+.detail-bottom{
+    height: calc(100% / 2);
+    background-color: rgb(42, 150, 48);
+}
+/* 액티비티 */
+.main-bottom {
+  height: calc(100% / 2);
+  background-color: chartreuse;
+}
+/* 하단 */
