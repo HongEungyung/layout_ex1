@@ -16,19 +16,19 @@ a {
 .container {
   width: 1200px;
   height: 1000px;
-  background-color: antiquewhite;
+  background-color: rgb(255, 249, 241);
   margin: auto;
 }
 /* 상단 */
 .header {
   width: 100%;
   height: 100px;
-  background-color: #004455;
+  /* background-color: #004455; */
 }
 /* 로고 */
 .logo {
   width: 300px;
-  background-color: aqua;
+  background-color: #004455;
   float: left;
 }
 .logo h1 {
@@ -43,7 +43,7 @@ a {
 nav {
   position: relative;
   width: 900px;
-  background-color: blue;
+  background-color: #004455;
   float: right;
   height: 100%;
 }
@@ -54,7 +54,7 @@ nav {
   width: calc(100% - 100px);
   height: 60px;
   margin-top: 40px;
-  background-color: violet;
+  /* background-color: violet; */
 }
 #topMenu li {
   width: calc(100% / 4);
@@ -69,7 +69,7 @@ nav {
   background-color: aquamarine;
 }
 #topMenu li:hover {
-  background-color: rgb(98, 197, 164);
+  background-color: #004455;
 }
 #topMenu li:hover a {
   color: #fff;
@@ -83,47 +83,95 @@ nav {
 .contents {
   width: 100%;
   height: 800px;
-  background-color: rgb(167, 227, 255);
+  padding: 40px 80px;
+  /* background-color: rgb(167, 227, 255); */
 }
 /* 힐링 */
 .main-top {
   width: 100%;
   height: calc(100% / 2);
-  background-color: rgb(252, 44, 252);
+  /* background-color: rgb(252, 44, 252); */
 }
 /* title */
 .main-top h2 {
-  background-color: rgb(255, 141, 169);
+  padding: 10px;
+  /* background-color: rgb(255, 141, 169); */
 }
 /* 설명 */
 .description {
   width: 100%;
   height: 300px;
-  background-color: blueviolet;
+  padding: 20px 0;
+  /* background-color: blueviolet; */
 }
 .desc-img {
   float: left;
   width: 450px;
   height: 100%;
-  background-color: brown;
+  border-radius: 20px;
+  overflow: hidden;
+  /* background-color: brown; */
+}
+/* 이미지넣을 범위 박스 안에 이미지대로 너비 줘야함 */
+/* 이미지 영역과 실제 이미지 구분하기 */
+.desc-img img {
+  width: 103%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.desc-img img:hover {
+  width: 110%;
+  filter: brightness(1.2);
+  /* 필터 종류 많음 */
+  /* filter: blur(2px); */
 }
 .desc-detail {
   float: left;
   width: calc(100% - 450px);
   height: 100%;
-  background-color: cadetblue;
+  padding-left: 30px;
+  /* background-color: cadetblue; */
 }
-.detail-top{
-    height: calc(100% / 2);
-    background-color: chartreuse;
+.detail-top {
+  height: calc(100% / 2);
+  /* background-color: chartreuse; */
 }
-.detail-bottom{
-    height: calc(100% / 2);
-    background-color: rgb(42, 150, 48);
+.desc-detail p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+  /* line-height: 2는 두배란 뜻임 =30px */
+}
+.p_top {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.detail-bottom {
+  height: calc(100% / 2);
+  /* background-color: rgb(42, 150, 48); */
+}
+h3{
+  margin-bottom: 10px;
 }
 /* 액티비티 */
 .main-bottom {
   height: calc(100% / 2);
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
 }
 /* 하단 */
+footer {
+  width: 100%;
+  height: 100px;
+  padding: 30px 60px;
+  border-top: 2px solid #222;
+  /* background-color: #daebf0; */
+}
+#bottomMenu ul li{
+  float: left;
+  padding: 0 30px;
+  border-right: 1px solid #ddd;
+  /* background-color: bisque; */
+}
+#bottomMenu ul li:last-child{
+  border: none;
+}
